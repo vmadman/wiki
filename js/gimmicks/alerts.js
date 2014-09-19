@@ -29,6 +29,8 @@
                 $p.addClass('alert-success');
             } else if (type === 'warning') {
                 $p.addClass('alert-warning');
+            } else if (type === 'error') {
+                $p.addClass('alert-error');
             }
         });
     }

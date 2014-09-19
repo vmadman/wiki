@@ -51,7 +51,7 @@ module.exports = function(grunt) {
           'js/gimmicks/yuml.js'
         ],
         cssFiles: [
-          'css/wiki.css',
+          'files/wiki.css',
           'tmp/colorbox.css',
           'bower_components/bootstrap/dist/css/bootstrap.css',
           'bower_components/prism/themes/prism.css'
@@ -185,6 +185,14 @@ module.exports = function(grunt) {
                 cwd: '<%= imgFiles[0] %>',
                 src: [ '*' ],
                 dest: 'tmp/release/images/colorbox/'
+              },
+              {
+                src: 'files/navigation.md',
+                dest: 'tmp/release/navigation.md'
+              },
+              {
+                src: 'files/config.json',
+                dest: 'tmp/release/config.json'
               }
             ]
           },
@@ -194,7 +202,7 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: false,
                 cwd: 'tmp/release/',
-                src: [ '*', '**', "index.html" ],
+                src: [ '*', '**', "index.html", "navigation.md", "config.json" ],
                 dest: 'dist'
               }
             ]
