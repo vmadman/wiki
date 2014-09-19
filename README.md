@@ -16,19 +16,19 @@ Building
 To build this wiki, you will need `nodejs`, `bower`, and `grunt-cli`.
 You can easily install `bower` and `grunt-cli` with the following commands.
 
-> npm install -g bower
-> npm install -g grunt-cli
+    npm install -g bower
+    npm install -g grunt-cli
 
 To build this wiki, simply clone the repository and run the `node` installs, and the `bower` installs.
 
-> git clone http://github.com/ciel/wiki
-> cd wiki
-> npm install
-> bower install
+    git clone http://github.com/ciel/wiki
+    cd wiki
+    npm install
+    bower install
 
 Once all of this is finished, just run the `grunt` builder to compile it into the `/dist` folder.
 
-> grunt release
+    grunt release
 
 
 
