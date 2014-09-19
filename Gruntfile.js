@@ -194,7 +194,7 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: false,
                 cwd: 'tmp/release/',
-                src: [ '*', '**', "*.html" ],
+                src: [ '*', '**', "index.html" ],
                 dest: 'dist'
               }
             ]
@@ -237,8 +237,8 @@ module.exports = function(grunt) {
 		   'concat',
 		   'copy:prepare',
 		   'rename:main',
+       'index',
 		   'copy:release',
-		   'index',
 		   'clean:tmp'
     ]);
 
