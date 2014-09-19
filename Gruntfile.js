@@ -237,7 +237,7 @@ module.exports = function(grunt) {
 		   'concat',
 		   'copy:prepare',
 		   'rename:main',
-       'index',
+		   'index',
 		   'copy:release',
 		   'clean:tmp'
     ]);
